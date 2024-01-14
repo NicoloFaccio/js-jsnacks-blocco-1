@@ -2,33 +2,16 @@
 
 //INITIALISATION OF THE VARIABLES 
 
-const matNumberFirst = prompt("Inserire il numero desiderato:");
-const matNumberSecond = prompt("Inserire il numero desiderato:");
-const matNumberThird = prompt("Inserire il numero desiderato:");
-const matNumberFourth = prompt("Inserire il numero desiderato:");
-const matNumberFifth = prompt("Inserire il numero desiderato:");
-const matNumberSixth = prompt("Inserire il numero desiderato:");
-const matNumberSeventh = prompt("Inserire il numero desiderato:");
-const matNumberEigth = prompt("Inserire il numero desiderato:");
-const matNumberNinth = prompt("Inserire il numero desiderato:");
-const matNumberTenth = prompt("Inserire il numero desiderato:");
-
 const resultHtml = document.getElementById("result")
+let sum = 0
 
-console.log(
-    matNumberFirst, 
-    matNumberSecond, 
-    matNumberThird, 
-    matNumberFourth, 
-    matNumberFifth,
-    matNumberSixth, 
-    matNumberSeventh, 
-    matNumberEigth, 
-    matNumberNinth, 
-    matNumberTenth
-)
-resultHtml.innerHTML = (`<p>il risultato della somma è: 
-${( matNumberFirst + matNumberSecond + matNumberThird + matNumberFourth + matNumberFifth + matNumberSixth + matNumberSeventh + matNumberEigth + matNumberNinth + matNumberTenth)} </p>`)
+
+for ( let i = 0; i < 10; i++ ){
+    const number = parseInt(prompt("inserire un numero;"));
+    console.log(sum += number)
+}
+
+resultHtml.innerHTML = (`La somma dei numeri insariti è; ${sum}`)
 
 
 
